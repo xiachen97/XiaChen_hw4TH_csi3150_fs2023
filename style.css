@@ -1,0 +1,31 @@
+
+.boxshape {
+  background-color: rgb(241, 233, 233);
+}
+.cardshape {
+    background-color: #ced7d8;
+    border-radius: 1vw;
+    margin:1vw;
+  }
+.header_container {
+  height: 10vh;
+}
+.footer_container {
+  height: 10vh;
+}
+.flex_container {
+  display: flex;
+}
+.filter-container {
+  flex: 1;
+}
+.collectData {
+  flex: 3;
+}
+.collectData {
+  display: grid;
+  grid-template-columns: repeat(3, 25vw);
+  
+  grid-gap:2vw;
+
+}
