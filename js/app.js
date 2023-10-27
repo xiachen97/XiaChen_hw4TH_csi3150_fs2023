@@ -1,3 +1,5 @@
+import usedCars from "../js/usedCars.js";
+
 const collectData = document.querySelector(".collectData");
 //finish usedCars.js convert to html
 function GenerateListCar(all_car) {
