@@ -1,4 +1,4 @@
-import usedCars from "../js/usedCars.js";
+import usedCars from "./usedCars.js";
 
 const collectData = document.querySelector(".collectData");
 //finish usedCars.js convert to html
