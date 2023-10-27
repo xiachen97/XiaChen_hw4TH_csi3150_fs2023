@@ -1,4 +1,8 @@
-
+body{
+  padding: 20px;
+  padding-bottom: 120px;
+  background-color: rgb(241, 233, 233);
+}
 .boxshape {
   background-color: rgb(241, 233, 233);
 }
@@ -8,15 +12,19 @@
     margin:1vw;
   }
 .header_container {
-  height: 10vh;
+  height: 8vh;
+  text-align: center;
+  padding: 1%;
+  font-family: verdana;
+  font-size: 20px;
 }
-.footer_container {
-  height: 10vh;
-}
+
+
 .flex_container {
-  display: flex;
+  display:flex;
 }
 .filter-container {
+  padding: 1%;
   flex: 1;
 }
 .collectData {
@@ -24,8 +32,30 @@
 }
 .collectData {
   display: grid;
-  grid-template-columns: repeat(3, 25vw);
-  
+  grid-template-columns: repeat(3, 25vw); 
+  grid-template-rows: 200px;
   grid-gap:2vw;
+}
 
+
+.filter-btn{
+  font-family: verdana;
+  color: #FFFFFF;
+  font-size:18px;
+  background-color:#424B54;
+  border-radius: 10px;
+  padding: 10px 50px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+footer {
+  height: 8vh;
+  position:fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(241, 233, 233);
+  color: cadetblue;
 }

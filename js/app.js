@@ -33,8 +33,8 @@ GenerateListCar(usedCars);
 const filter_btn = document.querySelector(".filter-btn");
 //filter usedCars.js data func
 function filterListCar(all_car) {
-  const minYear = parseInt(document.getElementById("minYear").value); //parseInt: to avoid our raw data is string and parse
-  const maxYear = parseInt(document.getElementById("maxYear").value);
+  const minYear = parseInt(document.getElementById("minYear").value)|| 0; //parseInt: to avoid our raw data is string and parse
+  const maxYear = parseInt(document.getElementById("maxYear").value)|| Infinity;
   const carMake = document.getElementById("make").value;
   const maxMile =
     parseInt(document.getElementById("maxMileage").value) || Infinity;
@@ -46,8 +46,8 @@ function filterListCar(all_car) {
 
   const filter_car = all_car.filter((each_car) => {
     return (
-      each_car.year >= minYear &&
-      each_car.year <= maxYear &&
+      (each_car.year >= minYear || minYear==="") &&
+      (each_car.year <= maxYear || maxYear==="") &&
       (each_car.make === carMake || carMake === "ALL") &&
       each_car.mileage <= maxMile &&
       each_car.price <= maxPrice &&

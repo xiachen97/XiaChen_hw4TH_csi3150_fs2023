@@ -8,6 +8,7 @@
     <script type="module" src="../js/app.js" defer></script>
   </head>
   <body>
+
     <main>
       <div class="container boxshape">
         <div class="header_container boxshape">
@@ -17,8 +18,9 @@
           <div class="filter-container boxshape">
             <h3>Please use filter below:</h3>
             <div class="filter-section">
-              <label class="filter-label" for="minYear">Min Car Year</label>
+              <label class="filter-label" for="minYear">Min Car Year: </label>
               <select id="minYear" class="filter-input">
+                <option value=""></option>
                 <option value="2014">2014</option>
                 <option value="2015">2015</option>
                 <option value="2016">2016</option>
@@ -32,22 +34,23 @@
             <br>
 
             <div class="filter-container boxshape">
-              <label class="filter-label" for="maxYear">Max Car Year</label>
+              <label class="filter-label" for="maxYear">Max Car Year: </label>
               <select id="maxYear" class="filter-input" name="maxYear">
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
+                <option value=""></option>
                 <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
               </select>
             </div>
 
             <br>
 
             <div class="filter-section">
-              <label class="filter-label" for="make">Car make</label>
+              <label class="filter-label" for="make">Car make: </label>
               <select id="make" class="filter-select">
                 <option value="ALL">ALL</option>
                 <option value="Toyota">Toyota</option>
@@ -74,14 +77,14 @@
             <br>
 
             <div class="filter-section">
-              <label class="filter-label" for="maxMileage">Max Car Mileage</label>
+              <label class="filter-label" for="maxMileage">Max Car Mileage: </label>
               <input type="number" id="maxMileage" placeholder="e.g. 15000" />
             </div>
 
             <br>
 
             <div class="filter-section">
-              <label class="filter-label" for="maxPrice">Max Car Price</label>
+              <label class="filter-label" for="maxPrice">Max Car Price: </label>
               <input
                 type="number"
                 id="maxPrice"
@@ -152,11 +155,11 @@
             <!-- all usedCars data will be collected here -->
           </div>
         </div>
-
-        <div class="footer_container boxshape">
-          <h4>Copyright @XiaChen -Used Car Company</h4>
-        </div>
       </div>
-    </main>
+    </main>   
+    
+    <footer>
+      <h4>Copyright @XiaChen - Used Car Company</h4> 
+    </footer>
   </body>
 </html>
