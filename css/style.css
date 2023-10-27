@@ -33,6 +33,7 @@ body{
 .collectData {
   display: grid;
   grid-template-columns: repeat(3, 25vw); 
+  grid-template-rows: repeat(auto, flex);
   grid-gap:2vw;
 }
 
